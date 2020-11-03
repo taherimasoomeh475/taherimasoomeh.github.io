@@ -1,598 +1,828 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="Retrina Group" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>معصومه طاهری</title>
-	<meta name="theme-color" content="#000">
+        <!--  FavIcon  -->
+        <link rel="shortcut icon" href="assets/img/favicon.ico">
 
-	<!-- Vendor Css-->
-	<link rel="stylesheet" href="assets/css/vendor.css" />	
-	<link rel="stylesheet" href="assets/css/LineIcons.min.css" />
-	<link rel="stylesheet" type="text/css" href="assets/css/photoswipe.min.css" />	
-	<link rel="stylesheet" type="text/css" href="assets/css/default-skin.min.css" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+        
+        <!-- Plugin Css -->
+        <link rel="stylesheet" href="assets/css/plugins.css">
+        <!-- Colors Css -->
+        <link rel="stylesheet" href="assets/css/color/pink-color.css" id="option-color">
+        <!--  Custom Style CSS  -->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!--  Rtl Style CSS  -->
+        <link rel="stylesheet" href="assets/css/rtl-main.css">
+    </head>
+    <body data-spy="scroll" data-target="#scrollspy" data-offset="70" class="rtl mono">
 
-	<!-- Settings style Css -->
-	<link href="assets/css/settings.css" rel="stylesheet">
+    <!--  Pre Loader  -->
+    <div id="overlayer"></div>
+    <span class="loader"></span>
 
-	<!-- TiffanyTemplate style Css -->
-	<link href="assets/css/theme-blue.css" rel="stylesheet">
-	<!-- <link href="assets/css/theme-green.css" rel="stylesheet"> -->
-	<!-- <link href="assets/css/theme-pink.css" rel="stylesheet"> -->
-	<!-- <link href="assets/css/theme-purple.css" rel="stylesheet"> -->
-	<!-- <link href="assets/css/theme-yellow.css" rel="stylesheet"> -->
-	<!-- <link href="assets/css/theme-red.css" rel="stylesheet"> -->
-	<!-- <link href="assets/css/theme-blue.css" rel="stylesheet"> -->
-	<!-- <link href="assets/css/theme-grey.css" rel="stylesheet"> -->
-
-	<!-- Custom style Css -->
-	<link href="assets/css/custom.css" rel="stylesheet">
-</head>
-
-<body data-spy="scroll" data-target=".navbar-collapse">
-
-	<!-- Setting Panel -->
-    <div class="settings_panel">
-		<div class="toggle_bts">
-			<a class="toggle-theme-panel active" href="#">
-				<i class='lni lni-cog'></i>
-			</a>
-		</div>
-		<div class="settings-content">
-			<h5>تغییر رنگ</h5>
-			<ul class="colors-switch">
-				<li><a href="#" title="theme-blue" class="theme-blue"></a></li>
-				<li><a href="#" title="theme-green" class="theme-green"></a></li>
-				<li><a href="#" title="theme-red" class="theme-red"></a></li>
-				<li><a href="#" title="theme-yellow" class="theme-yellow"></a></li>
-				<li><a href="#" title="theme-purple" class="theme-purple"></a></li>
-				<li><a href="#" title="theme-pink" class="theme-pink"></a></li>
-				<li><a href="#" title="theme-darkblue" class="theme-darkblue"></a></li>
-				<li><a href="#" title="theme-grey" class="theme-grey"></a></li>
-			</ul>
-			<h5>بکگراند</h5>
-			<ul class="bg-demo">
-				<li><a title="Background Image" href="index-2.html">ورژن 1</a></li>
-				<li><a title="Background Image with particles" href="index-3.html">ورژن 2</a></li>
-			</ul>
-		</div>
-	</div>
-	<!-- Setting Panel -->
-
-	<!-- START: Preloader -->
-	<div id="preloader" class="preloader">
-		<div class="spinner">
-			<div class="spinner-grow" role="status">
-		</div>
-			<span class="sr-only">صبر کنید...</span>
-		</div>
-		<div class="preloader-screens">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-	</div>
-	<!-- END: Preloader -->
-
-	<!-- START: Aside -->
-	<aside class="aside">
-		<!-- START: NAVBAR -->
-
-		<div class="nav-wrapper">
-
-			<div class="navbar-toggler">
-				<svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="60">
-				  <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
-				  <path class="line middle" d="m 30,50 h 40" />
-				  <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
-				</svg>
-			</div>
-
-			<nav class="navbar text-center align-items-center justify-content-center">
-
-
-
-                <div class="collapse navbar-collapse show" id="navbarCollapse">
-					
-					<div class="about-avatar mb-5">
-                		<a href="index-2.html">
-							<img src="assets/images/about.jpg" alt="" class="img-fluid mx-auto d-block shadow-sm rounded-full">
-						</a>
-
-						<div class="about-avatar-details mt-3">
-							<p class="badge">معصومه طاهری</p>
-						</div>
-					</div>
-
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link ripple active" href="#home">
-                            
-                            	<span>خانه</span>	<i class="lni-home"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ripple" href="#services">
-                            
-                            	<span>خدمات</span>	<i class="lni-offer"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ripple" href="#portfolio">
-                            
-                            	<span>نمونه‌کار</span>	<i class="lni-graduation"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ripple" href="#resume">
-                            
-                            	<span>رزومه</span>	<i class="lni-briefcase"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ripple" href="e_index.html">
-                            	
-                            	<span>نسخه انگلیسی</span><i class="lni-pencil"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ripple" href="#contact">
-                            
-                            	<span>ارتباط با من</span>	<i class="lni-phone-handset"></i>
-                            </a>
-                        </li>
-                    </ul>
+     <!-- Portfolio Single Modal Start -->
+     <div class="portfolio-single modal fade" id="portfolio-single" tabindex="-1" role="dialog" aria-labelledby="portfolioModalScrollable" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content text-muted">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalScrollable">کارهای من</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-
-               	<div class="aside-footer">
-                	<ul class="list-unstyled list-inline">
-                        <li class="list-inline-item"><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="lni-skype"></i></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="lni-youtube"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="lni-linkedin-original"></i></a></li>
-                    </ul>
-                </div>
-	        </nav>
-        </div>
-        <!-- END: NAVBAR -->
-    </aside>
-    <!-- START: Aside -->
-
-    <div class="page-wrapper section-dark">
-
-		<!-- START: HOME -->		
-    	<section class="section section-home section-home-2 " id="home">
-
-    		<div id="scene">
-    			<img data-depth="0.1" class="shape1" src="assets/images/decor1.png" alt="Scene Images1">
-    			<img data-depth="0.1" class="shape4" src="assets/images/decor4.png" alt="Scene Images1">
-    			<img data-depth="0.1" class="shape5" src="assets/images/shape5.svg" alt="Scene Images1">
-    			<img data-depth="0.1" class="shape6" src="assets/images/shape6.svg" alt="Scene Images1">
-    			<img data-depth="0.2" class="shape2" src="assets/images/decor2.png" alt="Scene Images2">
-    			<img data-depth="0.4" class="shape3" src="assets/images/decor3.png" alt="Scene Images3">
-    			<img data-depth="0.2" class="shape7" src="assets/images/shape7.svg" alt="Scene Images3">
-    			<img data-depth="0.1" class="shape8" src="assets/images/shape8.svg" alt="Scene Images3">
-    		</div>
-
-    		<div class="container vh-100">
-    			<div class="row justify-content-center align-items-center section-home-in h-100vh">
-    				<img class="hero-img img-fluid" src="assets/images/avatar.jpg" alt="About Picture">
-    				<h1 class="my-4">
-						<span id="autoplay" >
-							<span>Man</span>
-							<span>Developer</span>
-							<span>Hastam</span>
-						</span>
-					</h1>
-    			</div>
-    		</div>
-    		<div id="scroll-down"></div>
-    	</section>	
-    	<!-- END: HOME -->
-
-    	<!-- START: ABOUT -->		
-    	<section class="section section-about " id="home">
-    		<div class="container">
-    			<div class="row justify-content-center align-items-center">
-    				<div class="col-md-7">
-    					<div class="hero-right mt-5 mt-md-0 text-center" data-wow-delay="300ms">
-    						<h5>کارشناس ارشد تولید محتوای مجازی</h5>
-    						<h2 class="my-4">
-    							<span>  It مدرس در حوزه</span>
-    						</h2>
-    						<p> It مدرس  و دانش پژوه در حوزه</p>
-
-    						<div class="hero-right--btns my-4">
-    							<a target="_blank" href="https://linkedin.com/" class="btn btn-link">بیشتر بدانید</a>
-									<a href="#contact" class="btn ripple">کارمند در اداره کل آموزش صدا و سیما</a>
-								</div>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</section>
-		<!-- END: ABOUT -->    	
-
-		<!-- START: SERVICES -->
-		<section class="section section-dark section-services" id="services">
-			<div class="container">
-				<div class="section-head">
-					<span>چه میکنم</span>
-					<h2>خدمات من</h2>
-				</div>
-
-				<div class="section-inner">
-					<div class="row">
-						<div class="col-sm-6 col-lg-4">
-							<div class="services-list mt-5 "  >
-								<div class="list-icon list-icon-1">
-									<i class="lni-color-pallet"></i>
-								</div>
-								<div class="mt-4 pt-2">
-									<h5 class="mb-0">طراح گرافیک</h5>
-									<p class=" mt-3">طراح اینفوگرافیک های آماری </p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-lg-4">
-							<div class="services-list mt-5 "   >
-								<div class="list-icon list-icon-2">
-									<i class="lni-laptop-phone"></i>
-								</div>
-								<div class="mt-4 pt-2">
-									<h5 class="mb-0">کارشناس نرم افزارهای مولف</h5>
-									<p class=" mt-3">کارشناس و مشاور در حوزه تولید محتواهای مجازی و مدرس نرم افزارهای مولف</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-lg-4">
-							<div class="services-list mt-5 "   >
-								<div class="list-icon list-icon-3">
-									<i class="lni-video"></i>
-								</div>
-								<div class="mt-4 pt-2">
-									<h5 class="mb-0">تولید فایل های ارائه حرفه ای</h5>
-									<p class=" mt-3">تولید فایل های ارائه برای کنفرانس ها و جلسات با نرم افزارهای پرزی و فوکو اسکای و فلش های سه بعدی</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-lg-4">
-							<div class="services-list mt-5 "   >
-								<div class="list-icon list-icon-4">
-									<i class="lni-network"></i>
-								</div>
-								<div class="mt-4 pt-2">
-									<h5 class="mb-0">مدرس</h5>
-									<p class=" mt-3">دوره های افیس به صورت حرفه ای و نرم افزارهای ادوب</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-lg-4">
-							<div class="services-list mt-5 "   >
-								<div class="list-icon list-icon-5">
-									<i class="lni-game"></i>
-								</div>
-								<div class="mt-4 pt-2">
-									<h5 class="mb-0">موشن گرافیک</h5>
-									<p class=" mt-3">طراحی موشن های آموزشی و آماری</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-lg-4">
-							<div class="services-list mt-5 "   >
-								<div class="list-icon list-icon-6">
-									<i class="lni-bar-chart"></i>
-								</div>
-								<div class="mt-4 pt-2">
-									<h5 class="mb-0">داده کاوی</h5>
-									<p class=" mt-3">دانشجو و علاقه مند در حوزه آنالیز داده</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- END: SERVICES -->
-
-	
-
-    	<!-- START: TESTIMONY -->
-		<section class="section section-dark section-testimony" id="testimony">
-			<div class="container">
-				<div class="section-head text-center">
-					<span>همیشه و همه جا در پی یادگیری</span>
-					<h2>گذراندن دوره های حرفه ای فنون تدریس نظارت و ارزشیابی</h2>
-				</div>
-				<div class="section-inner section-testimony--content">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="swiper-container swiper-testimony "  >
-								<div class="swiper-wrapper">
-									<div class="swiper-slide single-testimonials ">
-										<div class="single-testimonials-in mx-auto text-center">
-											<div class="single-testimonials-head pt-4 pb-5">
-												<p>"بیست سال آموزش و تدریس "</p>
-												<p>"متاهل ، دارای دو فرزند ، ساکن تهران "</p>
-												<p>"آشنا به زبان انگلیسی و مادری"</p>
-											</div>	
-											<div class="single-testimonials-foot mx-auto">
-												<img src="assets/images/avatar1.jpg" alt="" class="mx-auto b-box">
-												
-											</div>
-										</div>
-									</div>
-
-								
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- END: TESTIMONY -->
-
-		<!-- START: RESUME -->
-		<section class="section section-resume" id="resume">
-			<div class="container">
-
-				<div class="section-head">
-					<span>رزومه من</span>
-					<h2>تجربیات من</h2>
-				</div>
-
-				<div class="section-inner">
-					<div class="section-resume-wrap">
-						<div class="section-experience mb-5">
-							<div class="row">
-								<div class="col-lg-9">
-									<div class="ExperienceList pb-3">
-										
-										<div class="resume-list b-box p-4 " >
-											<div class="row align-items-center">
-												<div class="col-md-4 text-md-left"><h6 class="badge badge-primary">1399 - تا حال</h6></div>
-
-												<div class="col-md-5 pb-2 pb-md-0">
-													<h5 class="mb-3">کارشناس ارشد تولید محتوای مجازی و مدرس</h5>
-													<p>تولید محتوا های مجازی و همچنین تدریس</p>
-												</div>
-												<div class="col-3 col-md-3 pb-3 pb-md-0">
-													اداره کل آموزش سازمان صدا و سیما
-												</div>
-											</div>
-										</div>
-										<div class="resume-list b-box p-4 " >
-											<div class="row align-items-center">
-												<div class="col-md-4 text-md-left"><h6 class="badge badge-success">1392 - 1396</h6></div>
-
-												<div class="col-md-5 pb-2 pb-md-0">
-													<h5 class="mb-3">پشتیبان سایت</h5>
-													<p>تولید محتوا و تیزر و پشتیبان سایت </p>
-												</div>
-												<div class="col-3 col-md-3 pb-3 pb-md-0">
-													شبکه سلامت 
-												</div>
-											</div>
-										</div>
-										<div class="resume-list b-box p-4 " >
-											<div class="row align-items-center">
-												<div class="col-md-4 text-md-left"><h6 class="badge badge-danger">1380 - 1396</h6></div>
-
-												<div class="col-md-5 pb-2 pb-md-0">
-													<h5 class="mb-3">مدرس</h5>
-													<p>تدریس دروس دوره دبیرستان رشته رایانه</p>
-												</div>
-												<div class="col-3 col-md-3 pb-3 pb-md-0">
-													فنی و حرفه ای
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-3">
-									<h5 class="section-subHead mb-4 ">تجربیات من</h5>
-								</div>
-
-							
-							</div>
-						</div>
-
-						<div class="section-education">
-							<div class="row">
-							
-
-								<div class="col-lg-9">
-									<div class="EducationList">
-										<div class="row">
-											<div class="col-md-6">
-												<div class="resume-list b-box p-4 mb-4 " >
-													<div>
-														<h5>دانشجوی ارشد </h5>
-														<h6 class="badge badge-light d-inline-block my-3">1398-1399</h6>
-														<p>در حوزه داده</p>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="resume-list b-box p-4 mb-4 " >
-													<div>
-														<h5>کارشناسی دانشگاه سراسری دخترانه کرج</h5>
-														<h6 class="badge badge-success d-inline-block my-3">1394-1396</h6>
-														<p>مهندسی تکنولوژی نرم افزار</p>
-														<p>معدل 18.35 و پروژه پایانی طراحی سایت لوازم خانگی با نمره 20</p>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="resume-list b-box p-4 mb-4 " >
-													<div>
-														<h5>کاردانی نرم افزار</h5>
-														<h6 class="badge badge-danger d-inline-block my-3">1378-1380</h6>
-														<p>معدل 17.35 و پروژه پایانی آموزش ریاضی اول راهنمایی 19.5</p>
-													</div>
-												</div>
-											</div>
-											
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-3">
-									<h5 class="section-subHead mb-4"> تحصیلات من</h5>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</section>
-		<!-- END: RESUME -->
-
-		
-
-    	<!-- START: CONTACT -->
-		<section class="section section-contact" id="contact">
-			<div class="container">
-				<div class="section-head">
-					<span>درود </span>
-					<h2>ارتباط با من </h2>
-				</div>
-			
-				<div class="section-inner">
-					<div class="contact-Otherdetails ">
-						<div class="contact-details">
-							<h5 class="section-subHead mb-4"> در تماس باشید</h5>
-							<div class="row justify-content-center align-items-center">
-								<div class="col-sm-6 col-lg-4">
-									<div class="contact-details--panel p-4 b-box text-center  " >
-										<div class="mb-3 list-icon list-icon-1">
-											<i class="lni-mobile"></i>
-										</div>
-										<div class="mt-2">
-											<a href="tel:9876543210" class="">09109803600</a>
-											<p class="mt-2">تماس</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-6 col-lg-4">
-									<div class="contact-details--panel p-4 b-box text-center  "  >
-										<div class="mb-3 list-icon list-icon-5">
-											<i class="lni-envelope"></i>
-										</div>
-										<div class="mt-2">
-											<a href="mailto:hello@beingeorge.com">taherimasoomeh475@gmail.com</a>
-											<p class="mt-2">ایمیل</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-6 col-lg-4">
-									<div class="contact-details--panel p-4 b-box text-center  "  >
-										<div class="mb-3 list-icon list-icon-5">
-											<i class="lni-envelope"></i>
-										</div>
-										<div class="mt-2">
-											<a href="https://quera.ir/profile/masoomeh6">آدرس quera.ir</a>
-											<p class="mt-2"><a href="assets/images/masoomeh taheri.pdf">masoomeh taheri</a></p>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-6 col-lg-4">
-									<div class="contact-details--panel p-4 b-box text-center  "  >
-										<div class="mb-3 list-icon list-icon-5">
-											<i class="lni-envelope"></i>
-										</div>
-										<div class="mt-2">
-											<p class="mt-2">فرم ارزشیابی</p>
-											<p class="mt-2"><a href="assets/images/MT_CV_CheckList_AR_3983.pdf">فرم ارزشیابی</a></p>
-										</div>
-									</div>
-								</div>
-						</div>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- END: CONTACT -->
-
-		
-
-
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe. 
-         It's a separate element, as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-            <div class="pswp__top-bar">
-                <!--  Controls are self-explanatory. Order can be changed. -->
-                <div class="pswp__counter"></div>
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
+                <div class="modal-body">
+                    <div class="pt-4 pb-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-10 mx-auto">
+                                    <div class="text-center">
+                                        <h2 class="mb-3">تک صفحه <span class="base-color"> نمونه کار</span></h2>
+                                        <p class="max-width-450">It مدرس  و دانش پژوه در حوزه</p>
+                                    </div>
+                                    <div class="row contact-info mt-5">
+                                        <div class="col-md-4">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6>ساخته شده توسط :</h6>
+                                                    <p class="mb-0">معصومه طاهری</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 p-title-border mt-3 mt-md-0">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6 class="contact_detail-title">دانشجوی ارشد مهندسی نرم افزار:</h6>
+                                                    <p class="mb-0">مهر 98</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mt-3 mt-md-0">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6>مهارت ها :</h6>
+                                                    <p class="mb-0">HTML5 / PHP / CSS3/focosky/photoshop/office</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <div class="portfolio-single-item image-border">
+                                            <img src="assets/img/portfolio-15.jpg" class="d-block" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="text-md-left mt-5">
+                                        <p class="my-3">همیشه و همه جا در پی یادگیری،گذراندن دوره های حرفه ای فنون تدریس نظارت و ارزشیابی </p>
+                                        <p class="mt-3 mb-0">بیست سال آموزش و تدریس،متاهل ، دارای دو فرزند ، ساکن تهران،آشنا به زبان انگلیسی و مادری</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
         </div>
     </div>
-</div>
+    <!--  Portfolio Single Modal End  -->
 
-	<!-- JAVASCRIPTS -->
+    
 
-	<script src="assets/js/vendor.js"></script>
-	
-	<script src="assets/js/parallax.min.js"></script>
-	<script src="assets/js/photoswipe.min.js"></script>
-	<script src="assets/js/photoswipe-ui-default.min.js"></script>
-	
+    <!--    Header Start    -->
+    <header id="header" class="header fixed-top">
+        <nav id="scrollspy" class="navbar navbar-expand-lg header-nav">
+            <div class="container-fluid">
+                <!--  Navbar Toggler Button Start -->
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#toggle-menu" aria-controls="toggle-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="lni-menu size-md"></span>
+                </button>
+                <!--  Navbar Toggler Button End -->
+                <div class="collapse navbar-collapse" id="toggle-menu">
+                    <ul class="navbar-nav nav-pills ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#hero">خانه</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">درباره من</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">خدمات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">نمونه کارها</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">ارتباط با من</a>
+                        </li>
+                    </ul>
+                    <ul class="list-inline socails mt-4  d-lg-none">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-github"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-	<!-- Custom Js -->
-	<script src="assets/js/imagesloaded.pkgd.js"></script>
-	<script src="assets/js/jquery.shuffle.min.js"></script>
-	<script src="assets/js/custom-shuffle-init.js"></script>
-	<script src="assets/js/pswp.js"></script>
-	<script src="assets/js/textition.min.js"></script>
+     <!-- Social -->
+     <div class="social-box">
+        <div class="follow-label">
+            <span>دنبال کردن من</span>
+        </div>
+        <div class="social">
+            <a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
+            <a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+            <a href="javascript:void(0);"><i class="fa fa-github"></i></a>
+            <a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
 
-	<script src="assets/js/custom.js"></script>
-</body>
+      <!--  Hero Start  -->
+      <section id="hero" class="section hero hero-03 full-screen p-0">
+        <div class="hero-content">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6 order-2 order-lg-1">
+                        <div class="hero-item">
+                            <h1 class="dark-color mb-3"><span class="base-color"> معصومه طاهری</span> هستم</h1>
+                            <h4 class="text-darktext-capitalize mb-0"><span class="base-color"></span> <span class="element" data-elements="گرافیک کار،کارشناس تولید محتوای مجازی ، مدرس،طراح وب"></span></h4>
+                            <p class="text-muted my-4">در تمام طول زندگی در تلاش بودم تا بهترین کار و بهترین انتخاب را داشته باشم </p>
+                            <div class="button-border mt-2">
+                                <a href="javascript:void(0);" class="pill-button">دانلود رزومه</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <div class="hero-image">
+                            <div class="square">
+                                <img src="assets/img/element_square.png" alt="/">
+                            </div>
+                            <div class="circle"></div>
+                            <div class="circle-2"></div>
+                            <div class="circle-3"></div>
+                            <div class="floating"></div>
+                            <div class="personal-image rounded-circle">
+                                <img src="assets/img/personal-image-05.jpg" alt="/" class="rounded-circle img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!--  Hero End  -->
 
+    <!--   About Start   -->
+    <section id="about" class="section about pb-5 pt-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image-border">
+                        <img src="assets/img/about-01.jpg" alt="/">
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="personal-item ">
+                        <h2 class="mb-0 base-color">درباره من</h2>
+                        <h5 class="text-dark my-3">کارشناس تولید محتوای مجازی <span class="base-color"> در حوزه رایانه</span> </h5>
+                        <div class="row">
+                            <div class="col-6 personal-info">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <p>تاریخ تولد : <span> تیر 1360</span></p>
+                                    </li>
+                                    <li>
+                                        <p>تلفن :<span> 09109803600</span></p>
+                                    </li>
+                                    <li>
+                                        <p>شهر :<span> تهران</span></p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 personal-info">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <p>سن :<span> 39</span></p>
+                                    </li>
+                                    <li>
+                                        <p>مدرک :<span> دانشجوی کارشناسی ارشد</span></p>
+                                    </li>
+                                    <li>
+                                        <p>ایمیل :<span> taherimasoomeh475@gmail.com</span></p>
+                                    </li>
+                                    <li>
+                                        <p>فریلنس :<span> امکان پذیر</span></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-border mt-3 mb-lg-0 mr-4">
+                        <a href="javascript:void(0);" class="pill-button">دانلود رزومه</a>
+                    </div>
+                    <div class="button-border mt-3 mb-lg-0 to-contact">
+                        <a href="#contact" class="pill-button">کارشناس ارشد در اداره کل آموزش صدا و سیما</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    About End    -->
+
+     <!--  Skill Start  -->
+     <section id="skills" class="section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-content mb-4">
+                        <p class="mb-2">سطح مهارت </p>
+                        <h2 class="base-color"> مهارت های من</h2>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="skill-boxes">
+                        <div class="row">
+                            <!-- Skill -->
+                            <div class="col-lg-6">
+                                <div class="skill-box">
+                                    <div class="skillbar clearfix" data-percent="95%">
+                                        <div class="skillbar-title"><span>HTML</span></div>
+                                        <div class="skillbar-bar fill-skillbar"></div>
+                                        <div class="skill-bar-percent">95%</div>
+                                    </div>
+                                    <div class="skillbar clearfix " data-percent="85%">
+                                        <div class="skillbar-title"><span>CSS</span></div>
+                                        <div class="skillbar-bar fill-skillbar"></div>
+                                        <div class="skill-bar-percent">85%</div>
+                                    </div>
+                                    <div class="skillbar clearfix" data-percent="60%">
+                                        <div class="skillbar-title"><span>PHP</span></div>
+                                        <div class="skillbar-bar fill-skillbar"></div>
+                                        <div class="skill-bar-percent">60%</div>
+                                    </div>
+									<div class="skillbar clearfix" data-percent="90%">
+                                        <div class="skillbar-title"><span>STORYLINE</span></div>
+                                        <div class="skillbar-bar fill-skillbar"></div>
+                                        <div class="skill-bar-percent">90%</div>
+                                    </div>
+									<div class="skillbar clearfix" data-percent="90%">
+                                        <div class="skillbar-title"><span>FOCUSKY</span></div>
+                                        <div class="skillbar-bar fill-skillbar"></div>
+                                        <div class="skill-bar-percent">90%</div>
+                                    </div>
+									<div class="skillbar clearfix" data-percent="90%">
+                                        <div class="skillbar-title"><span>PREMIERE</span></div>
+                                        <div class="skillbar-bar fill-skillbar"></div>
+                                        <div class="skill-bar-percent">90%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="skill-box">
+                                    <div class="skillbar clearfix " data-percent="100%">
+                                        <div class="skillbar-title"><span>PHOTOSHOP</span></div>
+                                        <div class="skillbar-bar fill-skillbar"></div>
+                                        <div class="skill-bar-percent">100%</div>
+                                    </div>
+                                    <div class="skillbar clearfix" data-percent="60%">
+                                        <div class="skillbar-title"><span>AFTEREFFECT</span></div>
+                                        <div class="skillbar-bar fill-skillbar"></div>
+                                        <div class="skill-bar-percent">60%</div>
+                                    </div>
+                                    <div class="skillbar clearfix" data-percent="60%">
+                                        <div class="skillbar-title"><span>ILLUSTRATOR</span></div>
+                                        <div class="skillbar-bar fill-skillbar"></div>
+                                        <div class="skill-bar-percent">60%</div>
+                                    </div>
+									<div class="skillbar clearfix" data-percent="100%">
+                                        <div class="skillbar-title"><span>ADOBE CAPTIVATE</span></div>
+                                        <div class="skillbar-bar fill-skillbar"></div>
+                                        <div class="skill-bar-percent">100%</div>
+                                    </div>
+									<div class="skillbar clearfix" data-percent="100%">
+                                        <div class="skillbar-title"><span>CAMTASIA</span></div>
+                                        <div class="skillbar-bar fill-skillbar"></div>
+                                        <div class="skill-bar-percent">100%</div>
+                                    </div>
+									<div class="skillbar clearfix" data-percent="100%">
+                                        <div class="skillbar-title"><span>OFFICE</span></div>
+                                        <div class="skillbar-bar fill-skillbar"></div>
+                                        <div class="skill-bar-percent">100%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--   Skill End   -->
+
+     <!--  Service Start  -->
+    <section id="services" class="section services py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-content mb-4">
+                        <p class="mb-2">ارایه خدمات</p>
+                        <h2 class="base-color">خدمات من</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Item 01 -->
+                <div class="col-lg-4 text-left">
+                    <div class="services-item box-hover-border">
+                        <div class="float-left mt-lg-1 d-inline-block services-icon">
+                            <i class="lni-brush-alt size-md base-color"></i>
+                        </div>
+                        <div class="services-content">
+                            <h5 class="mb-3">تولید فایل های ارائه حرفه ای</h5>
+                            <p class="text-muted mb-0">تولید فایل های ارائه برای کنفرانس ها و جلسات با نرم افزارهای پرزی و فوکو اسکای و فلش های سه بعدی</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 02 -->
+                <div class="col-lg-4 text-left">
+                    <div class="services-item box-hover-border">
+                        <div class="float-left mt-lg-1 d-inline-block services-icon">
+                            <i class="lni-check-mark-circle size-md base-color"></i>
+                        </div>
+                        <div class="services-content">
+                            <h5 class="mb-3">کارشناس نرم افزارهای مولف</h5>
+                            <p class="text-muted mb-0">کارشناس و مشاور در حوزه تولید محتواهای مجازی و مدرس نرم افزارهای مولف</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 03 -->
+                <div class="col-lg-4 text-left">
+                    <div class="services-item box-hover-border">
+                        <div class="float-left mt-lg-1 d-inline-block services-icon">
+                            <i class="lni-heart size-md base-color"></i>
+                        </div>
+                        <div class="services-content">
+                            <h5 class="mb-3">طراح گرافیک</h5>
+                            <p class="text-muted mb-0">طراح اینفوگرافیک های آماری</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 04 -->
+                <div class="col-lg-4 text-left">
+                    <div class="services-item box-hover-border">
+                        <div class="float-left mt-lg-1  d-inline-block services-icon">
+                            <i class="lni-mobile size-md base-color"></i>
+                        </div>
+                        <div class="services-content">
+                            <h5 class="mb-3">داده کاوی</h5>
+                            <p class="text-muted mb-0">دانشجو و علاقه مند در حوزه آنالیز داده</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 05 -->
+                <div class="col-lg-4 text-left">
+                    <div class="services-item box-hover-border">
+                        <div class="float-left mt-lg-1 d-inline-block services-icon">
+                            <i class="lni-world size-md base-color mb-0"></i>
+                        </div>
+                        <div class="services-content">
+                            <h5 class="mb-3">موشن گرافیک</h5>
+                            <p class="text-muted mb-0">طراحی موشن های آموزشی و آماری</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 06 -->
+                <div class="col-lg-4 text-left">
+                    <div class="services-item box-hover-border">
+                        <div class="float-left mt-lg-1 d-inline-block services-icon">
+                            <i class="lni-cup size-md base-color"></i>
+                        </div>
+                        <div class="services-content">
+                            <h5 class="mb-3">مدرس</h5>
+                            <p class="text-muted mb-0">دوره های افیس به صورت حرفه ای و نرم افزارهای ادوب</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--   Service End   -->
+
+    <!-- Portfolio Start -->
+    <section id="portfolio" class="section portfolio py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-content mb-4">
+                        <p class="mb-0">آخرین پروژه ها</p>
+                        <h2 class="base-color">کارهای من</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!--   Portfolio Filters   -->
+                <ul id="portfolio-filter" class="list-unstyled list-inline mb-0 col-lg-12 portfolio-filter">
+                    <li class="button-border list-inline-item">
+                        <a href="#" data-filter="*" class="pill-button active">همه</a>
+                    </li>
+                    <li class="button-border list-inline-item">
+                        <a href="#" data-filter=".webdesign" class="pill-button">دورههای تولید شده</a>
+                    </li>
+                    <li class="button-border list-inline-item">
+                        <a href="#" data-filter=".mobiledesign" class="pill-button">تدریس</a>
+                    </li>
+                    <li class="button-border list-inline-item">
+                        <a href="#" data-filter=".seo" class="pill-button">اینفوگرافیک</a>
+                    </li>
+                    <li class="button-border list-inline-item">
+                        <a href="#" data-filter=".graphic" class="pill-button">گرافیک</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="portfolio-items row">
+                <!-- Item 01 -->
+                <div class="col-lg-4 portfolio-item seo">
+                    <div class="image-border">
+                        <div class="portfolio-item-content">
+                            <img src="assets/img/portfolio-10.jpg" alt="/" class="img-fluid">
+                            <div class="img-overlay text-center">
+                                <div class="img-overlay-content">
+                                    <div class="portfolio-icon">
+                                        <button type="button" data-toggle="modal" data-target="#portfolio-single"><i class="lni-link"></i></button>
+                                        <a href="assets/img/portfolio-10.jpg" class="js-zoom-gallery">
+                                            <i class="lni-search"></i>
+                                        </a>
+                                    </div>
+                                    <h5 class="mt-3 mb-0">کار من</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 02 -->
+                <div class="col-lg-4 portfolio-item graphic webdesign">
+                    <div class="image-border">
+                        <div class="portfolio-item-content">
+                            <img src="assets/img/portfolio-11.jpg" alt="/" class="img-fluid">
+                            <div class="img-overlay text-center">
+                                <div class="img-overlay-content">
+                                    <div class="portfolio-icon">
+                                        <button type="button" data-toggle="modal" data-target="#portfolio-single"><i class="lni-link"></i></button>
+                                        <a href="assets/img/portfolio-11.jpg" class="js-zoom-gallery">
+                                            <i class="lni-search"></i>
+                                        </a>
+                                    </div>
+                                    <h5 class="mt-3 mb-0">کار من</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 03 -->
+                <div class="col-lg-4 portfolio-item webdesign graphic">
+                    <div class="image-border">
+                        <div class="portfolio-item-content">
+                            <img src="assets/img/portfolio-12.jpg" alt="/" class="img-fluid">
+                            <div class="img-overlay text-center">
+                                <div class="img-overlay-content">
+                                    <div class="portfolio-icon">
+                                        <button type="button" data-toggle="modal" data-target="#portfolio-single"><i class="lni-link"></i></button>
+                                        <a href="assets/img/portfolio-12.jpg" class="js-zoom-gallery">
+                                            <i class="lni-search"></i>
+                                        </a>
+                                    </div>
+                                    <h5 class="mt-3 mb-0">کار من</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 04 -->
+                <div class="col-lg-4 portfolio-item mobiledesign webdesign">
+                    <div class="image-border">
+                        <div class="portfolio-item-content">
+                            <img src="assets/img/portfolio-13.jpg" alt="/" class="img-fluid">
+                            <div class="img-overlay text-center">
+                                <div class="img-overlay-content">
+                                    <div class="portfolio-icon">
+                                        <button type="button" data-toggle="modal" data-target="#portfolio-single"><i class="lni-link"></i></button>
+                                        <a href="assets/img/portfolio-13.jpg" class="js-zoom-gallery">
+                                            <i class="lni-search"></i>
+                                        </a>
+                                    </div>
+                                    <h5 class="mt-3 mb-0">کار من</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 05 -->
+                <div class="col-lg-4 portfolio-item mobiledesign seo">
+                    <div class="image-border">
+                        <div class="portfolio-item-content">
+                            <img src="assets/img/portfolio-14.jpg" alt="/" class="img-fluid">
+                            <div class="img-overlay text-center">
+                                <div class="img-overlay-content">
+                                    <div class="portfolio-icon">
+                                        <button type="button" data-toggle="modal" data-target="#portfolio-single"><i class="lni-link"></i></button>
+                                        <a href="assets/img/portfolio-14.jpg" class="js-zoom-gallery">
+                                            <i class="lni-search"></i>
+                                        </a>
+                                    </div>
+                                    <h5 class="mt-3 mb-0">کار من</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 06 -->
+                <div class="col-lg-4 portfolio-item mobiledesign">
+                    <div class="image-border">
+                        <div class="portfolio-item-content">
+                            <img src="assets/img/portfolio-15.jpg" alt="/" class="img-fluid">
+                            <div class="img-overlay text-center">
+                                <div class="img-overlay-content">
+                                    <div class="portfolio-icon">
+                                        <button type="button" data-toggle="modal" data-target="#portfolio-single"><i class="lni-link"></i></button>
+                                        <a href="assets/img/portfolio-15.jpg" class="js-zoom-gallery">
+                                            <i class="lni-search"></i>
+                                        </a>
+                                    </div>
+                                    <h5 class="mt-3 mb-0">کار من</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  Portfolio End  -->
+
+    <!-- Testimonial Start -->
+    <section id="testimonial" class="section testimonial py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-content mb-4">
+                        <p class="mb-0">تحصیلات</p>
+                        <h2 class="base-color">تاریخچه تحصیلات</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel">
+                <!-- Testimonial Item-01 -->
+                <div class="testimonial-item box-border">
+                    <div class="testimonial-header">
+                        <div class="image-border">
+                            <img src="assets/img/client-01.png" alt="/">
+                        </div>
+                        <div class="testimonial-detail">
+                            <span class="d-block font-weight-bold">کارشناسی ارشد،</span>
+                            <small class="text-muted">گرایش داده</small>
+                        </div>
+                    </div>
+                    <p class="mb-0 text-muted">" دانشجوی ارشد مهندسی نرم افزار گرایش داده معدل 18.27 "</p>
+                </div>
+                <!-- Testimonial Item-02 -->
+                <div class="testimonial-item box-border">
+                    <div class="testimonial-header">
+                        <div class="image-border">
+                            <img src="assets/img/client-02.png" alt="/">
+                        </div>
+                        <div class="testimonial-detail">
+                            <span class="d-block font-weight-bold">کارشناسی،</span>
+                            <small class="text-muted"> مهندسی تکنولوژی نرم افزار</small>
+                        </div>
+                    </div>
+                    <p class="mb-0 text-muted">"  پروژه طراحی وب سایت فروشگاهی با نمره 20 معدل 18.25 "</p>
+                </div>
+                <!-- Testimonial Item-03 -->
+                <div class="testimonial-item box-border">
+                    <div class="testimonial-header">
+                        <div class="image-border">
+                            <img src="assets/img/client-03.png" alt="/">
+                        </div>
+                        <div class="testimonial-detail">
+                            <span class="d-block font-weight-bold">کاردانی نرم افزار،</span>
+                            <small class="text-muted"> نرم افزار</small>
+                        </div>
+                    </div>
+                    <p class="mb-0 text-muted">" پروژه آموزش مجازی با نمره 19.75 و معدل 18.17 "</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  Testimonial End  -->
+
+     <!--  Blog Start  -->
+     <section id="blog" class="section blog py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-content mb-4">
+                        <p class="mb-0">تجربیات</p>
+                        <h2 class="base-color">فعالیتهای انجام شده</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!--  Item 01 -->
+                <div class="col-lg-4">
+                    <div class="blog-item box-border">
+                        <div class="blog-image">
+                            <img src="assets/img/blog-01.jpg" alt="/">
+                        </div>
+                        <div class="blog-content">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <i class="lni-calendar base-color"></i>
+                                    <span class="text-muted">آذر 96</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="lni-comment base-color"></i>
+                                    <span class="text-muted">تا الان</span>
+                                </li>
+                            </ul>
+                            <h6 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single">اداره کل آموزش سازمان صدا و سیما</a></h6>
+                            <p class="text-dark">کارشناس ارشد تولید محتوای مجازی و مدرس</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--  Item 02 -->
+                <div class="col-lg-4">
+                    <div class="blog-item box-border">
+                        <div class="blog-image">
+                            <img src="assets/img/blog-02.jpg" alt="/">
+                        </div>
+                        <div class="blog-content">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <i class="lni-calendar base-color"></i>
+                                    <span class="text-muted">شهریور 92</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="lni-comment base-color"></i>
+                                    <span class="text-muted">96</span>
+                                </li>
+                            </ul>
+                            <h6 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single">شبکه سلامت</a></h6>
+                            <p class="text-dark">تولید محتوا و تیزر و پشتیبان سایت،پشتیبان سایت</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--  Item 03 -->
+                <div class="col-lg-4">
+                    <div class="blog-item box-border">
+                        <div class="blog-image">
+                            <img src="assets/img/blog-03.jpg" alt="/">
+                        </div>
+                        <div class="blog-content">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <i class="lni-calendar base-color"></i>
+                                    <span class="text-muted">فروردین 81 </span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="lni-comment base-color"></i>
+                                    <span class="text-muted">تا شهریور 92</span>
+                                </li>
+                            </ul>
+                            <h6 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single">فنی و حرفه ای</a></h6>
+                            <p class="text-dark">تدریس دروس دوره دبیرستان رشته رایانه،مدرس.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--   Blog End   -->
+
+     <!-- Contact Start -->
+     <section id="contact" class="section contact py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-content mb-4">
+                        <p class="mb-0">با من در تماس باشید</p>
+                        <h2 class="base-color">ارتباط با من</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row contact-info mt-5">
+                <div class="col-lg-4">
+                    <div class="text-left">
+                        <div class="base-color">
+                            <i class="lni-phone-handset size-sm float-left pt-1"></i>
+                        </div>
+                        <div class="mt-3 info">
+                            <h5 class="mb-0">تلفن تماس</h5>
+                            <p class="text-muted">09109803600</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-left">
+                        <div class="base-color">
+                            <i class="lni-map-marker size-sm float-left pt-1"></i>
+                        </div>
+                        <div class="mt-3 info">
+                            <h5 class="mb-0 contact_detail-title">آدرس محل کار</h5>
+                            <p class="text-muted">تهران ، صدا و سیمای جمهوری اسلامی ایران ، اداره کل آموزش</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-left">
+                        <div class="base-color">
+                            <i class="lni-pointer size-sm float-left pt-1"></i>
+                        </div>
+                        <div class="mt-3 info">
+                            <h5 class="mb-0">ایمیل من</h5>
+                            <p class="text-muted">taherimasoomeh475@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-lg-4">
+                    <div class="text-left">
+                        <div class="base-color">
+                            <i class="lni-pointer size-sm float-left pt-1"></i>
+                        </div>
+                        <div class="mt-3 info">
+                            <h5 class="mb-0"><a href="https://quera.ir/profile/masoomeh6">آدرس quera.ir</a></h5>
+                            <p class="text-muted"><a href="assets/images/masoomeh taheri.pdf">masoomeh taheri</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 mt-5 contact-form">
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-lg-6 form-item">
+                                <div class="form-group">
+                                    <input name="name" id="name" type="text" class="form-control" placeholder="نام *" required >
+                                </div>
+                            </div>
+                            <div class="col-lg-6 form-item">
+                                <div class="form-group">
+                                    <input name="email" id="email" type="email" class="form-control" placeholder="ایمیل *" required >
+                                </div>
+                            </div>
+                            <div class="col-12 form-item">
+                                <div class="form-group">
+                                    <input name="subject" id="subject" type="text" class="form-control" placeholder="موضوع *" required >
+                                </div>
+                            </div>
+                            <div class="col-12 form-item">
+                                <div class="form-group">
+                                    <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="پیام..."></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mt-4 text-left">
+                                <div class="button-border">
+                                    <a href="javascript:void(0)" class="pill-button" id="submit-btn" onclick="sendEmail()">ارسال پیام</a>
+                                </div>
+                                <div id="message" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000" >
+                                    <div class="toast-body d-inline-block"></div>
+                                    <button type="button" class="pr-3 close" data-dismiss="toast" aria-label="Close">
+                                        <span aria-hidden="true" class="lni-close size-xs "></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row copy-right">
+               
+            </div>
+        </div>
+    </section>
+    <!--  Contact End  -->
+
+    <!--  JavaScripts  -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <!--  Plugin Js  -->
+    <script src="assets/js/plugins.js"></script>
+    <!-- Map Js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcmB207_E3E4SkA8jTA8FQjSWTop9YxZU"></script>
+    <!--  Custom JS  -->
+    <script src="assets/js/arshia-rtl.js"></script>
+
+    </body>
 </html>
